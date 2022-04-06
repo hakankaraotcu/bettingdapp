@@ -1,0 +1,224 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\urlstyle{same}
+
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[CENG3550]{ Decentralized Betting App } % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Hakan Karaotcu\\ Mustafa Battaloğlu} % Your name
+\institute[MSKÜ] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+MSKÜ\\ % Your institution for the title page
+\medskip
+\textit{hakankaraotcu@gmail.com\\mmbattaloglu@gmail.com} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+
+
+\subsection {Problem and Definition of Requirement (Problem ve Gerekliliğin Tanımı)} 
+
+\begin{frame}
+\frametitle{Problem and Definition of Requirement (Problem ve Gerekliliğin Tanımı)}
+\begin{itemize}
+\item Bahis oyunlarında, merkeze bağımlılık sisteme olan güveni azaltıyor.
+\item Bahis Siteleri/Kuruluşları birer iş yeri gibi çalışır. Diğer iş yerleri gibi kendi karlarını garanti edebilcek şekilde tasarlanmış bir iş modelleri vardır.
+\\"House Always Wins"
+\item İnsanlar kazandıklarını düşünmelerine rağmen kazanan her zaman kasa oluyor. 
+\item Insanların oynadıkları bahislerde kazanmaları adına hiçbir etkileri yok.
+\item Bu yüzden insanların da oyunda etkisi olması adına, kendi NFT varlıkları ile bahislere katılma imkanı sunuyoruz. Bunu, bahislerdeki şans faktörünü koruyarak gerçekleştiriyoruz.
+
+\end{itemize}
+\end{frame}
+
+\subsection {Solution Proposal - Model} 
+
+\begin{frame}
+\frametitle{Solution Proposal - Model}
+\begin{itemize}
+\item Different user types of the system must be specified in the model
+\item Basic functions should be displayed on the figure
+\item Arrows should show the direction of data flow (with data type)
+\item I recommend using Draw.io or alike system (with colour selection for the colour blind people)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Proposed Model (as it is shown in the example)}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12.0cm]{DS4H.png}
+\caption{DS4H System Model}
+\label{fig0}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+\subsection {Original Value (Özgün Değer)} 
+
+\begin{frame}
+\frametitle{Original Value (Özgün Değer)}
+\begin{itemize}
+\item Bahis oyunlarından ayıran özellik, kendi varlıklarımıza sahip olmamız ve bunlarla bahislere katılabilmemiz.
+\item NFT varlıklarımızı belirli koşullar dahilinde geliştirebiliyoruz.
+\item Böylelikle oyunculara, bahis oyunu tarafında stratejik çeşitlilikler sunarak kazanmak için farklı opsiyonlar veriyoruz. 
+\end{itemize}
+\end{frame}
+
+\subsection {Widespread Impact (Yaygın Etki)} 
+
+\begin{frame}
+\frametitle{Widespread Impact (Yaygın Etki)}
+\begin{itemize}
+\item İnsanların bahis oyunlarına karşı tutumlarını ve bakış açılarını değiştirmeyi amaçlıyoruz.
+\item İnsanların bahis oynamak için daha güvenli platformlar aramasından doğan ihtiyaçları gören bu sektördeki şirketlerin gereken hamleleri yapmasını planlıyoruz
+\end{itemize}
+\end{frame}
+
+
+\subsection {Team Members and Roles (Takım Üyeleri ve Görevleri)} 
+\begin{frame}
+\frametitle{Team Members and Roles (Takım Üyeleri ve Görevleri)}
+
+\begin{itemize}
+\item Hakan Karaotcu: Back-end developing, Solidity  Developing, Gameplay Mechanics
+\item Mustafa Battaloğlu: Front-end developing, Solidity Developing, Betting Maths\&Logic
+\end{itemize}
+
+\end{frame}
+
+
+\subsection {Work Packages (İş Paketleri)} 
+\begin{frame}
+\frametitle{Work Packages (İş Paketleri)}
+
+\begin{itemize}
+\item Work packages should be given as a table, you are expected to submit it as in the next slide (Tübitak format).
+\item Information should include Who, which Work packages and estimated times
+\item Those who want to turn the project into a publication and thesis can give work packages that extend  the semester
+\item Detailed information about the work packages : \url{https://slideplayer.biz.tr/slide/3353904/} 
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Work Packages (format as shown in the sample)}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12.0cm]{cizelge.png}
+\label{fig0}
+\end{center}\vs{}
+\end{figure}
+
+\end{frame}
+\begin{frame}
+\frametitle{Thanks. Questions and answers ...}
+
+The end slide of the presentation
+
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
