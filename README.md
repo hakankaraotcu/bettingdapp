@@ -17,7 +17,6 @@
 
 Decentralized Betting Application with NFT's.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Built With
 
@@ -58,7 +57,7 @@ You should install :
    npm install
    ```
 3. Start Server
-   ```js
+   ```sh
    npm run start
    ```
   4. Start Hardhat Nodes
@@ -67,7 +66,7 @@ You should install :
      ```
    5. Deploy Contracts
       ```sh
-      npx hardhat run ./src/backend/scripts/contract/deploy.js --network localhost
+      npx hardhat run ./src/backend/scripts/deploy.js --network localhost
       ```
 
 
