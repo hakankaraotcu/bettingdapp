@@ -1,4 +1,5 @@
-<div id="top">
+<div id="top" align="center">
+<h3>CENG3550 Decentralized Systems and Applications</h3>
 </div>
 
 <div align="center">
@@ -50,7 +51,7 @@ You should install :
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/mbattaloglu/bettingdap.git
+   git clone https://github.com/mbattaloglu/bettingdapp.git
    ```
 2. Install NPM packages
    ```sh
