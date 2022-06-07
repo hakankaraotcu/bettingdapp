@@ -58,27 +58,21 @@ You should install :
    ```sh
    npm install
    ```
-
 3. Open Ganache and start local network
-4.  Deploy Contracts
-      ```sh
-      truffle migrate --reset
-      ```
- 5. Start Server
- ```sh
- npm run start
- ```
+4. Deploy Contracts
+   ```sh
+   truffle migrate --reset
+   ```
+5. Start Server
+    ```sh
+    npm run start
+    ```
 
 
 ## Usage
 
 After installing dependencies and project, you can go to the website and create NFT's and buy them.
-
-### Testing
-You can test contracts. To do that, open the terminal and type:
-```sh
-npx hardhat test
-```
+You can bet on them.
 
 
 ## Roadmap
