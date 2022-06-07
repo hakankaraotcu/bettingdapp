@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://github.com/mbattaloglu/bettingdapp">
-    <img src="./src/frontend/components/flag.png" alt="Logo" width="80" height="80">
+    <img src="./src/assets/flag.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Decentralized Betting</h3>
@@ -23,7 +23,7 @@ Decentralized Betting Application with NFT's.
 
 * [React.js](https://reactjs.org/)
 * [React Bootstrap](react-bootstrap.github.io)
-* [Hardhat](https://hardhat.org/)
+* [Truffle](https://trufflesuite.com/)
 * [ERC721 Token Standart](https://docs.openzeppelin.com/contracts/3.x/erc721)
 
 
@@ -36,13 +36,14 @@ Decentralized Betting Application with NFT's.
 First of all, you should have a [MetaMask](metamask.io) account.
 
 You should install :
-* Hardhat
+* Truffle
   ```sh
-  npm install --save-dev hardhat@2.8.4
+  npm install -g truffle
   ```
+ * [Ganache](https://trufflesuite.com/ganache/)
  * React
     ```sh
-    npm install react
+    npm install -g react@17.0.2
     ```
 
 
@@ -57,21 +58,16 @@ You should install :
    ```sh
    npm install
    ```
-3. Start Server
-   ```sh
-   npm run start
-   ```
-  4. Start Hardhat Nodes
-     ```sh
-     npx hardhat node
-     ```
-   5. Deploy Contracts
+
+3. Open Ganache and start local network
+4.  Deploy Contracts
       ```sh
-      npx hardhat run ./src/backend/scripts/deploy.js --network localhost
+      truffle migrate --reset
       ```
-
-
-
+ 5. Start Server
+ ```sh
+ npm run start
+ ```
 
 
 ## Usage
